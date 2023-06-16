@@ -10,13 +10,15 @@ int main(void)
 {
 int i = 65;
 int a = 97;
-for (a; a < 123; a++)
+while (a < 123)
 {
 putchar(a);
+a++;
 }
-for (i; i < 91 ; i++)
+while (i < 91)
 {
 putchar(i);
+a++;
 }
 putchar('\n');
 return (0);

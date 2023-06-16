@@ -9,10 +9,10 @@
 int main(void)
 {
 int a = 122;
-for (a; a > 96; a--)
-{
+do {
 putchar(a);
-}
+a--;
+} while (a > 96);
 putchar('\n');
 return (0);
 }

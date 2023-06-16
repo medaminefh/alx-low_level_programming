@@ -8,12 +8,17 @@
  */
 int main(void)
 {
-int a = 0;
-while (a < 10)
+int a = 48;
+
+while (a < 58)
 {
-printf("%d", a);
+putchar(a);
+if (a != 57)
+{
+putchar(44);
+}
 a++;
 }
-printf("\n");
+putchar('\n');
 return (0);
 }

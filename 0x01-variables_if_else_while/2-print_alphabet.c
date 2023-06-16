@@ -9,9 +9,10 @@
 int main(void)
 {
 int a = 97;
-for (a; a < 123; a++)
+while (a < 123)
 {
 printf("%c", a);
+a++;
 }
 printf("\n");
 return (0);

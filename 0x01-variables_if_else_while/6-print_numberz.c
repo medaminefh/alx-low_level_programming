@@ -8,9 +8,11 @@
  */
 int main(void)
 {
-for (int a = 48; a < 58; a++)
+int a = 48;
+while (a < 58)
 {
 putchar(a);
+a++;
 }
 putchar('\n');
 return (0);
