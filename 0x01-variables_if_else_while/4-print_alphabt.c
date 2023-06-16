@@ -9,12 +9,13 @@
 int main(void)
 {
 int a = 97;
-for (a; a < 123; a++)
+while (a < 123)
 {
 if (a != 101 && a != 113)
 {
 putchar(a);
 }
+a++;
 }
 putchar('\n');
 return (0);

@@ -16,6 +16,7 @@ putchar(a);
 if (a != 57)
 {
 putchar(44);
+putchar(' ');
 }
 a++;
 }
