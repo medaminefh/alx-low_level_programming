@@ -1,4 +1,4 @@
-#include "main.h"
+#include "2-header.h"
 
 /**
  * print_alphabet_x10 - This will convert ascii number into char
@@ -7,7 +7,7 @@
 (* section header: Section description)*
  * Return: just return 0 for ok
  */
-int print_alphabet_x10(void)
+void print_alphabet_x10(void)
 {
 int i = 0;
 while (i < 9)

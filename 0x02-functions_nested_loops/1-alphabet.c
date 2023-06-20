@@ -1,4 +1,4 @@
-#include "main.h"
+#include "1-header.h"
 
 /**
  * print_alphabet - This will convert ascii number into char
@@ -7,7 +7,7 @@
 (* section header: Section description)*
  * Return: just return 0 for ok
  */
-int print_alphabet(void)
+void print_alphabet(void)
 {
 int i = 97;
 while (i < 123)
