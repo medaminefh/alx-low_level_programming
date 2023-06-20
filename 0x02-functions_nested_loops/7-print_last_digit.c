@@ -10,9 +10,15 @@
 
 int print_last_digit(int c)
 {
-if (c >= 0)
+int lastdigit = c % 10;
+if (lastdigit >= 0)
 {
-return (c % 10);
+_putchar(lastdigit + 48);
+return (lastdigit);
 }
-return ((c * -1) % 10);
+else
+{
+_putchar(-lastdigit + 48);
+return (-lastdigit);
+}
 }
