@@ -1,4 +1,4 @@
-#include "2-header.h"
+#include "main.h"
 
 /**
  * print_alphabet_x10 - This will convert ascii number into char
@@ -10,10 +10,16 @@
 void print_alphabet_x10(void)
 {
 int i = 0;
-while (i < 9)
+int j = 97;
+while (i < 10)
 {
-print_alphabet();
+while (j < 123)
+{
+_putchar(j);
+j++;
+}
+j = 97;
+_putchar('\n');
 i++;
 }
-_putchar('\n');
 }
