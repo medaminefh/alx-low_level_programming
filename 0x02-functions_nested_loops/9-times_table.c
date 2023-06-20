@@ -22,12 +22,13 @@ if (d > 9)
 {
 _putchar(d / 10 + 48);
 _putchar(d % 10 + 48);
-_putchar(44);
-_putchar(' ');
 }
 else
 {
 _putchar((c * b) + 48);
+}
+if (c != 9)
+{
 _putchar(44);
 _putchar(' ');
 }
