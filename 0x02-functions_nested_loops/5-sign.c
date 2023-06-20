@@ -1,20 +1,28 @@
 #include "main.h"
 /**
- * main - This will convert ascii number into char
+ * print_sign - This will convert ascii number into char
 (* a blank line
  * Description: by placing %c instead of %d, the number will be converted)?
 (* section header: Section description)*
+ * @c: is int
  * Return: just return 0 for ok
  */
-int main(void)
+
+int print_sign(int c)
 {
-char out[8] = "_putchar";
-int i = 0;
-while (i < 8)
+if (c > 0)
 {
-_putchar(out[i]);
-i++;
+_putchar('+');
+return (1);
 }
-_putchar('\n');
+else if (c < 0)
+{
+_putchar('-');
+return (-1);
+}
+else
+{
+_putchar('0');
 return (0);
+}
 }

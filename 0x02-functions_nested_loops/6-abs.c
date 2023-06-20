@@ -1,19 +1,18 @@
 #include "main.h"
-
 /**
- * print_alphabet - This will convert ascii number into char
+ * _abs - This will convert ascii number into char
 (* a blank line
  * Description: by placing %c instead of %d, the number will be converted)?
 (* section header: Section description)*
+ * @c: is of type int
  * Return: just return 0 for ok
  */
-int print_alphabet(void)
+
+int _abs(int c)
 {
-int i = 97;
-while (i < 123)
+if (c > 0)
 {
-_putchar(i);
-i++;
+return (c);
 }
-_putchar('\n');
+return (c * -1);
 }

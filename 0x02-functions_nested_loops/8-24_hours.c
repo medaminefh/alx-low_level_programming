@@ -1,19 +1,26 @@
 #include "main.h"
-
 /**
- * print_alphabet - This will convert ascii number into char
+ * jack_bauer - This will convert ascii number into char
 (* a blank line
  * Description: by placing %c instead of %d, the number will be converted)?
 (* section header: Section description)*
  * Return: just return 0 for ok
  */
-int print_alphabet(void)
+
+void jack_bauer(void)
 {
-int i = 97;
-while (i < 123)
+char i[2] = '00';
+char j[2] = '00';
+
+while(i <= '23')
+{
+while(j <= '59')
 {
 _putchar(i);
+_putchar(':');
+_putchar(j);
+j++;
+}
 i++;
 }
-_putchar('\n');
 }
