@@ -1,5 +1,6 @@
+#include "main.h"
 /**
- * _islower - This will convert ascii number into char
+ * _isalpha - This will convert ascii number into char
 (* a blank line
  * Description: by placing %c instead of %d, the number will be converted)?
 (* section header: Section description)*
