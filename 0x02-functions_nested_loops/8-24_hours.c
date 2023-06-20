@@ -9,18 +9,31 @@
 
 void jack_bauer(void)
 {
-char i[2] = '00';
-char j[2] = '00';
+int h1;
+int h2;
+int m1;
+int m2;
 
-while(i <= '23')
+for (h1 = 0; h1 <= 2; h1++)
 {
-while(j <= '59')
+for (h2 = 0; h2 <= 9; h2++)
 {
-_putchar(i);
-_putchar(':');
-_putchar(j);
-j++;
+for (m1 = 0; m1 <= 5; m1++)
+{
+for (m2 = 0; m2 <= 9; m2++)
+{
+if (h1 >= 2 && h2 >= 4)
+{
+break;
 }
-i++;
+_putchar(h1 + 48);
+_putchar(h2 + 48);
+_putchar(58);
+_putchar(m1 + 48);
+_putchar(m2 + 48);
+_putchar('\n');
+}
+}
+}
 }
 }
