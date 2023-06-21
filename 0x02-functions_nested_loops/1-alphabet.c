@@ -1,4 +1,4 @@
-#include "1-header.h"
+#include "main.h"
 
 /**
  * print_alphabet - This will convert ascii number into char
