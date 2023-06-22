@@ -1,22 +1,18 @@
 #include "main.h"
 /**
- * print_most_numbers - This will convert ascii number into char
+ * print_line - This will convert ascii number into char
 (* a blank line
  * Description: by placing %c instead of %d, the number will be converted)?
 (* section header: Section description)*
+ * @n: is an int
  * Return: just return 0 for ok
  */
-void print_most_numbers(void)
+void print_line(int n)
 {
-int a = 48;
-while (a < 58)
+int i;
+for (i = 0; i < n; i++)
 {
-if (a != 50 || a != 52)
-{
-_putchar(a);
-a++;
-}
+_putchar(95);
 }
 _putchar('\n');
-return (0);
 }

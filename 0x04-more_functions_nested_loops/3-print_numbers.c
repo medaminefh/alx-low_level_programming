@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * print_numbers - This will convert ascii number into char
 (* a blank line
@@ -11,9 +11,9 @@ void print_numbers(void)
 int a = 48;
 while (a < 58)
 {
-putchar(a);
+_putchar(a);
 a++;
 }
-putchar('\n');
+_putchar('\n');
 return (0);
 }
