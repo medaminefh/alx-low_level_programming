@@ -12,14 +12,13 @@ int a;
 int i;
 for (i = 0; i < 10; i++)
 {
-for (a = 48; a < 58; a++)
+for (a = 0; a <= 14; a++)
 {
-_putchar(a);
+if (a > 9)
+{
+_putchar((a / 10) + 48);
 }
-for (a = 48; a < 53; a++)
-{
-_putchar(49);
-_putchar(a);
+_putchar((a % 10) + 48);
 }
 _putchar('\n');
 }
