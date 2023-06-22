@@ -16,6 +16,11 @@ for (a = 48; a < 58; a++)
 {
 _putchar(a);
 }
+for (a = 48; a < 53; a++)
+{
+_putchar(49);
+_putchar(a);
+}
 _putchar('\n');
 }
 }
