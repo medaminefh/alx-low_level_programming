@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * rev_string - This will convert ascii number into char
 (* a blank line
@@ -11,14 +12,22 @@
 void rev_string(char *s)
 {
 int curr = 0;
+int i = 0;
 while (s[curr] != '\0')
 {
 curr++;
 }
 while (curr > 0)
 {
-_putchar(s[curr - 1]);
+if (i == 0)
+{
+*s = s[curr - 1];
+}
+else
+{
+*(s + i) = s[curr - 1];
+}
+i++;
 curr--;
 }
-_putchar('\n');
 }
