@@ -11,23 +11,26 @@
 
 void rev_string(char *s)
 {
-int curr = 0;
 int i = 0;
-while (s[curr] != '\0')
+int j = 0;
+
+char a;
+char b;
+
+while (s[i] != '\0')
 {
-curr++;
-}
-while (curr > 0)
-{
-if (i == 0)
-{
-*s = s[curr - 1];
-}
-else
-{
-*(s + i) = s[curr - 1];
-}
 i++;
-curr--;
+}
+i--;
+while (j < i)
+{
+a = s[j];
+b = s[i];
+
+s[j] = b;
+s[i] = a;
+
+i--;
+j++;
 }
 }
