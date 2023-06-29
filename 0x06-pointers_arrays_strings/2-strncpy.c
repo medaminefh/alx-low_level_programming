@@ -1,24 +1,21 @@
 #include "main.h"
 
 /**
- * _strcat - This will convert ascii number into char
+ * _strncpy - This will convert ascii number into char
 (* a blank line
  * Description: by placing %c instead of %d, the number will be converted)?
 (* section header: Section description)*
  * @dest: is a pointer to a string
  * @src: is a pointer to a str
+ * @n: is an int
  * Return: just return 0 for ok
  */
-char *_strcat(char *dest, char *src)
+char *_strncpy(char *dest, char *src, int n)
 {
 int a;
-int b;
-for (a = 0; dest[a] != '\0'; a++)
-{}
-for (b = 0; src[b] != '\0'; b++)
+for (a = 0; (a < n && src[a] != '\0'); a++)
 {
-dest[a + b] = src[b];
+dest[a] = src[a];
 }
-dest[a + b] = '\0';
 return (dest);
 }
