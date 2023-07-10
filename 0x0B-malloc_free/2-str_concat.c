@@ -33,7 +33,6 @@ s = malloc(sizeof(char) * (i + j) + 1);
 }
 if (s == NULL)
 	return (NULL);
-s[i + j + 1] = '\0';
 if (s1 != NULL)
 {
 while (a < i)
@@ -50,5 +49,6 @@ s[a + b] = s2[b];
 b++;
 }
 }
+s[i + j + 1] = '\0';
 return (s);
 }
