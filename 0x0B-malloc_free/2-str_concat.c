@@ -21,16 +21,17 @@ int a = 0;
 int b = 0;
 if (s1 != NULL)
 {
-for (i = 0; s1[i] != '\0'; i++)
-{}
-
+i = 0;
+while (s1 && s1[i] != '\0')
+	i++;
 }
 if (s2 != NULL)
 {
-for (j = 0; s2[j] != '\0'; j++)
-{}
-s = malloc(sizeof(char) * (i + j) + 1);
+j = 0;
+while (s2 && s2[j] != '\0')
+	j++;
 }
+s = malloc(sizeof(char) * (i + j) + 1);
 if (s == NULL)
 	return (NULL);
 if (s1 != NULL)
