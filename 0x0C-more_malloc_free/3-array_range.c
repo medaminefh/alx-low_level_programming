@@ -18,10 +18,10 @@ int *s;
 if (min > max)
 	return (NULL);
 
-s = malloc(sizeof(int) * (max - min));
+s = malloc(sizeof(int) * (max - min + 1));
 if (s == NULL)
 	return (NULL);
-while (min < max)
+while (min <= max)
 {
 s[i] = min;
 min++;
