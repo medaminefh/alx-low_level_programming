@@ -21,14 +21,14 @@ for (i = 0; i < n; i++)
 	if (separator == NULL)
 	{
 		if (x == NULL)
-			printf("(nil)");
+			printf("nil");
 		else
 			printf("%s", x);
 	}
 	else
 	{
 	if (x == NULL)
-		printf("(nil)");
+		printf("nil");
 	else
 	{
 	printf("%s", x);
