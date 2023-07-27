@@ -1,5 +1,6 @@
 #include "lists.h"
 #include <stdio.h>
+#include <stddef.h>
 
 /**
  * print_list - check the code
@@ -9,8 +10,7 @@
 
 size_t print_list(const list_t *h)
 {
-
-size_t len = h->len;
+int len = 0;
 while (h)
 {
 	if (h->str == NULL)
@@ -19,6 +19,7 @@ while (h)
 	}
 	else
 		printf("[%d] %s\n", h->len, h->str);
+len++;
 h = h->next;
 }
 return (len);
