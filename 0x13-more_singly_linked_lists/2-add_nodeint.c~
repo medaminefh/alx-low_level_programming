@@ -4,20 +4,6 @@
 
 
 /**
- * _strlen - length of a string
- * @str: is the string
- * Return: ....
- */
-
-int _strlen(const char *str)
-{
-int i = 0;
-while (str[i] != '\0')
-	i++;
-return (i);
-}
-
-/**
  * add_nodeint - check the code
  * @head: is a list to be printed
  * @n: is an int
