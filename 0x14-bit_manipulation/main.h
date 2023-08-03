@@ -1,0 +1,6 @@
+#ifndef MY_HEADER_FILE
+#define MY_HEADER_FILE
+
+unsigned int binary_to_uint(const char *b);
+
+#endif
